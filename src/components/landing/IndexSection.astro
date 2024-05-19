@@ -1,0 +1,85 @@
+---
+import { Image } from "astro:assets";
+import GonzaAlien from "../../media/img/fotos/foto-gonza-alien-min.png";
+import GonzaImg from "../../media/img/fotos/foto-gonza-min.png";
+
+const { language } = Astro.props;
+---
+
+<section class="index animate__animated" id="quienSoy">
+  <!--CONTENEDOR INDEX-->
+  <div class="principal">
+    <Image
+      src={GonzaAlien}
+      alt="Foto de alien"
+      class="foto-gonza floating animate__animated noMostrar"
+      id="fotoGonzaAlienIndex"
+    />
+    <Image
+      src={GonzaImg}
+      alt="Foto autor"
+      class="foto-gonza floating animate__animated"
+      id="fotoGonzaIndex"
+    />
+
+    <div class="principal-textos">
+      {
+        language === "spanish" ? (
+          <p>
+            Hola, soy
+            <span
+              class="gonza-text animate__animated animate__zoomInDown"
+              id="gonzaText"
+            >
+              Gonza
+            </span>
+            !
+          </p>
+        ) : (
+          <p>
+            Hi, i am
+            <span
+              class="gonza-text animate__animated animate__zoomInDown"
+              id="gonzaText"
+            >
+              Gonza
+            </span>
+            !
+          </p>
+        )
+      }
+      <p>
+        Frontend <span
+          id="creative"
+          class="animate__animated animate__zoomInDown creative">Creative</span
+        > Developer
+      </p>
+
+      {
+        language === "spanish" ? (
+          <>
+            <p class="text animate__animated animate__zoomInDown">
+              Disfruto transformar ideas en código.
+            </p>
+            <a href="./aboutMe" class="about-me-button" id="aboutMeButton">
+              Más sobre mi{" "}
+              <i class="fa-solid fa-arrow-right-long arrow-right" />
+            </a>
+          </>
+        ) : (
+          <>
+            <p class="text animate__animated animate__zoomInDown">
+              I enjoy transform ideas into code.
+            </p>
+            <a href="./en/aboutMe" class="about-me-button" id="aboutMeButton">
+              More about me{" "}
+              <i class="fa-solid fa-arrow-right-long arrow-right" />
+            </a>
+          </>
+        )
+      }
+    </div>
+  </div>
+</section>
+
+<script src="../../scripts/indexSection.js"></script>

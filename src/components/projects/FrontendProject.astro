@@ -1,0 +1,8 @@
+---
+const { title, imgUrl, internUrl } = Astro.props;
+---
+
+<a href={`frontend/${internUrl}`} class="proyecto">
+  <p class="proyecto__title">{title}</p>
+  <img src={imgUrl} alt={title} />
+</a>

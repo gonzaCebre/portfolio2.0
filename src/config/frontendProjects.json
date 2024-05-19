@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,    
+    "title": "Stay Chill",
+    "description": "Ecommerce para marca de productos relacionados al consumo de c*nnabis. Realizado con el stack MERN e implementando la pasarela de pago de Mercadopago y Paypal.",
+    "imgDesktop": "https://res.cloudinary.com/dpaxljhpr/image/upload/v1713030014/Portfolio%202.0/proyectos/stayChill/staychill-desktop_e6f1ni.png",
+    "imgMobile": "https://res.cloudinary.com/dpaxljhpr/image/upload/v1713030014/Portfolio%202.0/proyectos/stayChill/staychill-mobile_rp80vu.png",
+    "internUrl": "stayChill",
+    "githubUrl": "https://github.com/gonzaCebre/ecommerce",
+    "projectUrl": "https://frontend-delta-rouge-29.vercel.app/",
+    "technologies": [
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/html.png",
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/css.png",
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/sass.png",
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/react.png"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Portfolio",
+    "description": "Portfolio personal pensado, diseñado y desarrollado por mi. Usando la suite de Adobe para el diseño de piezas gráficas, la librería Animate.css para animaciones y AstroJs para el desarrollo.",
+    "imgDesktop": "https://res.cloudinary.com/dpaxljhpr/image/upload/v1713030215/Portfolio%202.0/proyectos/portfolio/portfolio-desktop_ajogef.png",
+    "imgMobile": "https://res.cloudinary.com/dpaxljhpr/image/upload/v1713030218/Portfolio%202.0/proyectos/portfolio/portfolio-mobile_wirijy.png",
+    "internUrl": "portfolio",
+    "githubUrl": "https://github.com/gonzaCebre/",
+    "projectUrl": "https://www.gonzacebre.com.ar",
+    "technologies": [
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/html.png",
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/css.png",
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/sass.png",
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/astro.png"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Not Basic Nails",
+    "description": "Landing page creada para emprendimiento de salón de uñas, haciendo uso de Sass y Javascript puro.",
+    "imgDesktop": "https://res.cloudinary.com/dpaxljhpr/image/upload/v1713030173/Portfolio%202.0/proyectos/notBasic/notBasic-desktop_zsbeil.png",
+    "imgMobile": "https://res.cloudinary.com/dpaxljhpr/image/upload/v1713030176/Portfolio%202.0/proyectos/notBasic/notBasic-mobile_amlxhn.png",
+    "internUrl": "notBasic",
+    "githubUrl": "https://github.com/gonzaCebre/notbasicnails",
+    "projectUrl": "https://gonzacebre.github.io/notbasicnails/",
+    "technologies": [
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/html.png",
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/css.png",
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/js.png"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Nico Martinez",
+    "description": "Portfolio web diseñado y desarrolado para artista con javascript puro y Bootstrap",
+    "imgDesktop": "https://res.cloudinary.com/dpaxljhpr/image/upload/v1713030140/Portfolio%202.0/proyectos/nicoMartinez/nicoMartinez-desktop_qhwxcw.png",
+    "imgMobile": "https://res.cloudinary.com/dpaxljhpr/image/upload/v1713030137/Portfolio%202.0/proyectos/nicoMartinez/nicoMartinez-mobile_s8fumn.jpg",
+    "internUrl": "nicoMartinez",
+    "githubUrl": "https://github.com/gonzaCebre/nicoMartinez",
+    "projectUrl": "https://elnicomartinez.ar",
+    "technologies": [
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/html.png",
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/css.png",
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/sass.png",
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/js.png",
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715988630/Portfolio%202.0/tecnologias/bootstrap.png"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "GHR Abogados",
+    "description": "Sitio web para presentación de servicios y medio de contacto de un estudio jurídico situado en Bs. As., Argentina. Desarrollado con Javascript",
+    "imgDesktop": "https://res.cloudinary.com/dpaxljhpr/image/upload/v1713030100/Portfolio%202.0/proyectos/GHR/ghrAbogados-desktop_ppttgy.png",
+    "imgMobile": "https://res.cloudinary.com/dpaxljhpr/image/upload/v1713030102/Portfolio%202.0/proyectos/GHR/ghrAbogados-mobile_bfmzpv.png",
+    "internUrl": "ghr",
+    "githubUrl": "https://github.com/gonzaCebre/ghr",
+    "projectUrl": "https://ghrabogados.com.ar/",
+    "technologies": [
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/html.png",
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/css.png",
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715463273/Portfolio%202.0/tecnologias/js.png",
+      "https://res.cloudinary.com/dpaxljhpr/image/upload/v1715988630/Portfolio%202.0/tecnologias/bootstrap.png"
+    ]
+  }
+]

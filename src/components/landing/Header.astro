@@ -1,0 +1,57 @@
+---
+const { language } = Astro.props;
+---
+
+{
+  language === "spanish" ? (
+    <header id="header" class="animate__animated">
+      <nav class="navbar">
+        <a href="/" class="logo-gonza">
+          GonzaCebre
+        </a>
+        <div class="menu-btn" id="menuBtn">
+          <div class="menu-btn__burger" />
+        </div>
+        <div class="navbar-links" id="navbarLinks">
+          <ul>
+            <li class="animate__animated animate__slideInDown">
+              <a href="/#quienSoy">¿Quién soy?</a>
+            </li>
+            <li class="animate__animated animate__slideInDown">
+              <a href="/#queHago">¿Qué hago?</a>
+            </li>
+            <li class="animate__animated animate__slideInDown">
+              <a href="/#matcheamos">Charlemos!</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  ) : (
+    <header id="header" class="animate__animated">
+      <nav class="navbar">
+        <a href="/en" class="logo-gonza">
+          GonzaCebre
+        </a>
+        <div class="menu-btn" id="menuBtn">
+          <div class="menu-btn__burger" />
+        </div>
+        <div class="navbar-links" id="navbarLinks">
+          <ul>
+            <li class="animate__animated animate__slideInDown">
+              <a href="/en/#quienSoy">Who i am?</a>
+            </li>
+            <li class="animate__animated animate__slideInDown">
+              <a href="/en/#queHago">What i do?</a>
+            </li>
+            <li class="animate__animated animate__slideInDown">
+              <a href="/en/#matcheamos">Let´s talk!</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  )
+}
+
+<script src="../../scripts/hamburguerMenu.js"></script>

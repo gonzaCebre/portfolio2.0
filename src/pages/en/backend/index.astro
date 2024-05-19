@@ -1,0 +1,56 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+
+import backendProjects from "../../../config/backendProjects.json";
+---
+
+<Layout>
+  <section
+    class="modal frontend-modal animate__animated animate__zoomIn"
+    id="backendModal"
+  >
+    <!--    CONTAINER   -->
+    <div class="container">
+      <div class="compu">
+        <!--    OVNI    -->
+        <a href="/en/#queHago" class="ovni-modal">
+          <svg
+            viewBox="0 0 893 934"
+            id="volverAIndexBackend"
+            class="ovni-creativo"
+          >
+            <g>
+              <path
+                d="M10.05,472.38C164.98,317.47,319.82,162.63,473.47,9c37.29,38.01,75.79,77.24,117.8,120.05
+                            C478.39,240.56,362.08,355.47,242.43,473.68C359.86,590.59,474.99,705.22,589.28,819c-40.07,39.23-79.3,77.63-117.6,115.12
+                            C319.48,781.89,164.63,627,10.05,472.38z"
+              ></path>
+              <path
+                d="M889.31,653.34c-38.81,37.76-72.41,70.47-106.06,103.15c-5.21,5.05-10.59,9.92-14.47,13.55
+                            C668.61,668.95,569.1,568.52,470.42,468.94c96.19-95.73,196.63-195.68,295.93-294.5c36.45,36.8,75,75.72,115.65,116.76
+                            c-58.52,57.35-119.34,116.94-180.91,177.29C765.02,531.27,825.08,590.26,889.31,653.34z"
+              ></path>
+            </g>
+          </svg>
+        </a>
+        <div class="pantalla--backend" id="pantallaBackend">
+          <h2 class="backend-text">Class <span>Projects</span>{"{"}</h2>
+          <p class="backend-text">
+            constructor(){"{"}
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.projects = []; <br />
+          </p>
+
+          <div class="backend__projects" id="backendProjects"></div>
+
+          <p class="backend-text">this.proyectos.push();</p>
+          <i class="fa-solid fa-arrow-down down-arrow-white-backend floating"
+          ></i>
+        </div>
+        <div class="en-proceso" id="enProceso">IN THE PROCESS OF CREATION</div>
+      </div>
+
+      <img src="https://i.ibb.co/rGzpjrs/compu-min.gif" alt="" />
+    </div>
+  </section>
+</Layout>

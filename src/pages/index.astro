@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Header from "../components/landing/Header.astro";
+import Ovni from "../components/landing/Ovni.astro";
+import Alien from "../components/landing/Alien.astro";
+import IndexSection from "../components/landing/IndexSection.astro";
+import QueHago from "../components/landing/QueHago.astro";
+import Footer from "../components/landing/Footer.astro";
+import AlienWarning from "../components/landing/AlienWarning.astro";
+import Language from "../components/landing/Language.astro";
+import DontPushButton from "../components/landing/DontPushButton.astro";
+---
+
+<Layout language="spanish">
+  <a href="#submit" style="z-index: 100">
+    <Ovni />
+  </a>
+
+  <Language />
+
+  <Alien />
+  <AlienWarning language="spanish" />
+
+  <main>
+    <IndexSection language="spanish" />
+    <QueHago language="spanish" />
+  </main>
+  <Footer language="spanish" />
+</Layout>
+
+<script src="../scripts/ovni.js"></script>
+<script src="../scripts/intersectionObserver.js"></script>

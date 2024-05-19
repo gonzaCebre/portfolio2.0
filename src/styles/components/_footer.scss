@@ -1,0 +1,324 @@
+footer {
+    width: 100vw;
+    background-color: $green;
+    padding: 3.125rem;
+    padding-bottom: 1rem;
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .triangle--left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0; 
+        height: 0; 
+        border-bottom: 40vh solid transparent; 
+    }
+
+    .triangle--right {
+        @extend .triangle--left;
+        border-left: none;
+        right: 0;
+        left: auto;
+    }
+
+    .footer__ovni {
+        fill: $dark;
+        position: absolute;
+        transform: rotate(2deg);
+        transition: all ease-in-out;
+        animation: floating 2s ease-in-out infinite;
+        animation-delay: 0ms;
+    }
+
+
+
+    .footer-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+    }
+
+    .contacto {
+        text-align: center;
+        margin-bottom: 1rem;
+
+        p {
+            @include text($gantari, 1.25rem, $dark);
+            font-weight: 600;
+        }
+
+        .redes {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0.7rem;
+
+            .logos-redes {
+                fill: $violet;
+
+                &:first-child{
+                    margin-right: 2rem;
+                }
+
+                
+
+                &:hover {
+                    cursor: pointer;
+                    fill: $dark;
+                }
+            }
+
+
+        }
+
+        span{
+            color: $violet;
+            font-size: 1rem;
+            font-family: $gantari;
+            font-weight: bold;
+        }
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        p {
+            @include text($gantari, 1.25rem, $dark);
+            font-weight: 600;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            input {
+                width: 45%;
+                margin-top: 1rem;
+                padding: .375rem;
+                padding-left: 1rem;
+                border: none;
+                border-radius: 1rem;
+                background-color: $white;
+                font-size: 1rem;
+
+
+                &::placeholder {
+                    @include text($gantari, 1rem, $violet);
+                }
+            }
+
+
+            textarea {
+                @extend input;
+                width: 100%;
+                padding-top: 1rem;
+                
+            }
+
+            .ovni-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .ovni-submit {
+                    margin-top: -4rem;
+                    fill: $violet;
+                    width: 3.125rem;
+                    transform: rotate(2deg);
+                    animation: floating 2s ease-in-out infinite;
+                }
+            }
+
+
+
+            .submit {
+                width: 30%;
+                height: 2rem;
+                padding: 0.2rem;
+                margin: 0 auto;
+                margin-top: 1rem;
+                background-color: $violet;
+                border: none;
+                border-radius: 1rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                @include text($fredoka, 0.8rem, $dark);
+                text-transform: uppercase;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $dark;
+                }
+
+                @keyframes pulse {
+                    50% {
+                        transform: scaleX(1.1) scaleY(1.1);
+                    }
+                    
+                }
+
+
+            }
+        }
+    }
+    p {
+        text-align: center;
+    }
+
+    .autoria{
+        font-family: $gantari;
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+}
+
+//      CELULAR
+
+@media only screen and (min-width: 0px) {
+
+    footer{
+        .triangle--left {
+            border-left: calc((105vw - 20rem)/2) solid $white;
+        }
+    
+        .triangle--right {
+            border-right: calc((105vw - 20rem)/2) solid $white;
+            border-left: none;
+        }
+    
+        .footer__ovni {
+            width: 20rem;
+            top: -13.5%;
+        }
+        
+
+        .footer-texto {
+            .footer-title {
+                font-size: 1.7rem;
+            }
+    
+            p {
+                @include text($fredoka, 1.25rem, $violet);
+                margin-top: .5rem;
+            }
+        }
+
+        .formulario{
+            width: 100%;
+
+            form{
+                width: 60%;
+                min-width: 300px;
+            }
+        }
+    
+        .contacto{
+            .redes{
+                .logos-redes{
+                    height: 3rem;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }
+
+    
+
+
+}
+
+
+//      COMPU
+
+@media only screen and (min-width: 992px) {
+
+    footer{
+        .triangle--left {
+            border-left: calc((105vw - 30rem)/2) solid $white;
+        }
+    
+        .triangle--right {
+            border-right: calc((105vw - 30rem)/2) solid $white;
+            border-left: none;
+        }
+    
+        .footer__ovni {
+            width: 30rem;
+            top: -19.5%;
+        }
+
+        .footer-texto {
+            .footer-title {
+                font-size: 2.7rem;
+            }
+    
+            p {
+                @include text($fredoka, 1.8rem, $violet);
+            }
+        }
+
+        .formulario{
+            width: 100%;
+
+            form{
+                width: 35%;
+                min-width: 500px;
+            }
+        }
+    
+        .contacto{
+            .redes{
+                .logos-redes{
+                    height: 3.6rem;
+                }
+            }
+        }
+
+        p{
+            font-size: 1rem;
+
+            b{
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+}
+
+
+//  ANIMACIONES
+
+
+@keyframes floating {
+    0% {
+        transform: translateY(0) rotate(2deg);
+        
+    }
+    25% {
+        transform: translateY(4px) rotate(2deg);
+        
+    }
+    50% {
+        transform: translateY(0) rotate(2deg);
+    }
+    75% {
+        transform: translateY(4px) rotate(2deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(2deg);
+    }
+}

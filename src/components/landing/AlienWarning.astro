@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+import alienWarningImg from "../../media/img/fotos/alien-warning-min.png";
+const { language } = Astro.props;
+---
+
+{
+  language === "spanish" ? (
+    <div class="cartel noMostrar" id="cartelWarning">
+      Abrí la web en PC para ver la magia.
+      <Image
+        src={alienWarningImg}
+        alt="alien warning"
+        class="alien-warning"
+        id="alienWarningImg"
+      />
+    </div>
+  ) : (
+    <div class="cartel noMostrar" id="cartelWarning">
+      Open the website on PC to see the magic.
+      <Image
+        src={alienWarningImg}
+        alt="alien warning"
+        class="alien-warning"
+        id="alienWarningImg"
+      />
+    </div>
+  )
+}
+
+<script src="../../scripts/alienWarningMobile"></script>

@@ -1,0 +1,41 @@
+
+
+.language{
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    padding: 1rem;
+    margin-top: 1rem;
+
+    &__buttons{
+        margin-right: 4vw;
+        font-family: $gantari;
+        
+        
+        &__left{
+            background-color: $violet;
+            color: $white;
+            text-decoration: none;
+            padding: 0.3rem;
+            padding-left: 0.5rem;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+            &:hover{
+                background-color: $green;
+                color: $dark;
+                font-weight: bold;
+            }
+        }
+
+        &__right{
+            @extend .language__buttons__left;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 10px;
+            padding-left: 0.3rem;
+            padding-right: 0.5rem;
+        }
+    }
+}

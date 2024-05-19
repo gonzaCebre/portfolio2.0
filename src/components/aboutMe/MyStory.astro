@@ -1,0 +1,225 @@
+---
+import Uno from "../../media/img/aboutMe/01b.png";
+import Dos from "../../media/img/aboutMe/02.png";
+import Tres from "../../media/img/aboutMe/03.png";
+import Cuatro from "../../media/img/aboutMe/04.png";
+import Cinco from "../../media/img/aboutMe/05.png";
+import Seis from "../../media/img/aboutMe/06.png";
+import Siete from "../../media/img/aboutMe/07.png";
+import Ocho from "../../media/img/aboutMe/08.png";
+import Nueve from "../../media/img/aboutMe/09.png";
+import Diez from "../../media/img/aboutMe/10.png";
+import { Image } from "astro:assets";
+
+const { language } = Astro.props;
+---
+
+{
+  language === "spanish" ? (
+    <div class="story-container">
+      <div class="story-container__fragment show" id="firstFragment">
+        <div class="story-container__fragment__img">
+          <Image src={Uno} alt="01" />
+        </div>
+        <p>
+          Hola, soy Gonzalo Cebrero. Tengo 29 años <br /> y me encanta crear
+          cosas.
+        </p>
+      </div>
+
+      <div class="story-container__fragment">
+        <div class="story-container__fragment__img">
+          <Image src={Dos} alt="02" />
+        </div>
+        <p>Nací, me crié y vivo en Córdoba, Argentina.</p>
+      </div>
+
+      <div class="story-container__fragment">
+        <div class="story-container__fragment__img">
+          <Image src={Tres} alt="01" />
+        </div>
+        <p>
+          Soy muy curioso y siempre me gustó materializar ideas que tuviera en
+          mi cabeza.
+        </p>
+      </div>
+
+      <div class="story-container__fragment">
+        <div class="story-container__fragment__img">
+          <Image src={Cuatro} alt="01" />
+        </div>
+        <p>
+          Así fui aprendiendo diferentes habilidades <br /> para poder
+          expresarme.
+        </p>
+      </div>
+
+      <div class="story-container__fragment">
+        <p>Luego del secundario, cursé "Diseño Industrial".</p>
+        <div class="story-container__fragment__img">
+          <Image src={Cinco} alt="01" />
+        </div>
+        <p>
+          Donde aprendí a dar vida a productos y servicios, desde la
+          conceptualización al producto final.
+        </p>
+      </div>
+
+      <div class="story-container__fragment">
+        <p>
+          Gracias a uno de los proyectos llegué <br />
+          al mundo de la programación...
+        </p>
+        <div class="story-container__fragment__img">
+          <Image src={Seis} alt="01" />
+        </div>
+        <p>...y me dí cuenta de que era algo que me gustaba.</p>
+      </div>
+
+      <div class="story-container__fragment">
+        <p>Empecé aprendiendo de forma autodidacta...</p>
+        <div class="story-container__fragment__img">
+          <Image src={Siete} alt="01" />
+        </div>
+        <p>
+          ...y luego me anoté en la carrera de "Desarrollador Fullstack" en
+          Coderhouse.
+        </p>
+      </div>
+
+      <div class="story-container__fragment">
+        <div class="story-container__fragment__img">
+          <Image src={Ocho} alt="01" />
+        </div>
+        <p>
+          Así fue que descubrí que disfruto <br /> poder expresarme a través de
+          código.
+        </p>
+      </div>
+
+      <div class="story-container__fragment">
+        <p>
+          En Coderhouse tuve mi primer trabajo en el mundo de la programación...
+        </p>
+        <div class="story-container__fragment__img">
+          <Image src={Nueve} alt="01" />
+        </div>
+        <p>...como tutor de "Desarrollo web".</p>
+      </div>
+
+      <div class="story-container__fragment">
+        <div class="story-container__fragment__img">
+          <a href="/#queHago">
+            <Image src={Diez} alt="01" class="freelance" />
+          </a>
+        </div>
+        <p>
+          Y actualmente realizo proyectos freelance mientras me sigo formando...
+        </p>
+      </div>
+    </div>
+  ) : (
+    <div class="story-container">
+      <div class="story-container__fragment show" id="firstFragment">
+        <div class="story-container__fragment__img">
+          <Image src={Uno} alt="01" />
+        </div>
+        <p>
+          Hello, I'm Gonzalo Cebrero. I am 29 years old <br /> and I love to
+          create things.
+        </p>
+      </div>
+
+      <div class="story-container__fragment">
+        <div class="story-container__fragment__img">
+          <Image src={Dos} alt="02" />
+        </div>
+        <p>I was born, raised and live in Córdoba, Argentina.</p>
+      </div>
+
+      <div class="story-container__fragment">
+        <div class="story-container__fragment__img">
+          <Image src={Tres} alt="01" />
+        </div>
+        <p>
+          I am very curious and I always liked to materialize ideas that I had
+          in my head.
+        </p>
+      </div>
+
+      <div class="story-container__fragment">
+        <div class="story-container__fragment__img">
+          <Image src={Cuatro} alt="01" />
+        </div>
+        <p>
+          This is how I learned different skills <br /> to be able to express
+          myself.
+        </p>
+      </div>
+
+      <div class="story-container__fragment">
+        <p>After high school, I studied "Industrial Design".</p>
+        <div class="story-container__fragment__img">
+          <Image src={Cinco} alt="01" />
+        </div>
+        <p>
+          Where I learned to bring products and services to life, from
+          conceptualization to the final product.
+        </p>
+      </div>
+
+      <div class="story-container__fragment">
+        <p>
+          Thanks to one of the projects I arrived <br />
+          to the world of programming...
+        </p>
+        <div class="story-container__fragment__img">
+          <Image src={Seis} alt="01" />
+        </div>
+        <p>... and I realized that it was something I liked.</p>
+      </div>
+
+      <div class="story-container__fragment">
+        <p>I started learning self-taught...</p>
+        <div class="story-container__fragment__img">
+          <Image src={Siete} alt="01" />
+        </div>
+        <p>
+          ...and then I signed up for the "Fullstack Developer" career at
+          Coderhouse.
+        </p>
+      </div>
+
+      <div class="story-container__fragment">
+        <div class="story-container__fragment__img">
+          <Image src={Ocho} alt="01" />
+        </div>
+        <p>
+          That's how I discovered that I enjoy <br /> being able to express
+          myself through code.
+        </p>
+      </div>
+
+      <div class="story-container__fragment">
+        <p>At Coderhouse I had my first job in the world of programming...</p>
+        <div class="story-container__fragment__img">
+          <Image src={Nueve} alt="01" />
+        </div>
+        <p>... as a "Web Development" tutor.</p>
+      </div>
+
+      <div class="story-container__fragment">
+        <div class="story-container__fragment__img">
+          <a href="/#queHago">
+            <Image src={Diez} alt="01" class="freelance" />
+          </a>
+        </div>
+        <p>
+          And currently I do freelance projects while I continue training...
+        </p>
+      </div>
+    </div>
+  )
+}
+
+<script src="../../scripts/myStory.js"></script>

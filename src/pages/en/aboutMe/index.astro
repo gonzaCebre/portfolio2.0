@@ -1,0 +1,52 @@
+---
+import "../../../styles/Style.scss";
+
+import { Image } from "astro:assets";
+import alienTaza from "../../../media/img/aboutMe/subite-alien-en.png";
+import ovni from "../../../media/img/ovni.png";
+import interiorOvni from "../../../media/img/aboutMe/interior-ovni3.png";
+import Layout from "../../../layouts/Layout.astro";
+import MyStory from "../../../components/aboutMe/MyStory.astro";
+import Heart from "../../../media/music/Heart.mp3";
+---
+
+<Layout>
+  <main class="about-me">
+    <div class="about-me__subite" id="subite">
+      <Image
+        src={alienTaza}
+        alt="Alien con una taza en la mano"
+        class="alien-taza"
+      />
+      <Image src={ovni} alt="ovni" class="ovni-subite" id="vamosButton" />
+    </div>
+
+    <div class="about-me__interior">
+      <audio src={Heart} id="audio"></audio>
+
+      <div class="about-me__interior__reproductor">
+        <i class="fas fa-backward" id="previous"></i>
+        <div class="about-me__interior__reproductor__pantalla">
+          <MyStory />
+        </div>
+        <i class="fas fa-forward" id="forward"></i>
+      </div>
+      <Image src={interiorOvni} alt="interior ovni" class="interior-ovni" />
+
+      <div class="about-me__interior__pregunta" id="pregunta">
+        <div class="about-me__interior__pregunta__container">
+          <p>Shall I put on some music?</p>
+
+          <div class="botones">
+            <button id="daleButton">Ok!</button>
+            <button id="noButton">Better not </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="music"><i class="fa-solid fa-music"></i> Play/pause</button>
+  </main>
+</Layout>
+
+<script src="../../../scripts/aboutMe.js"></script>
