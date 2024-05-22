@@ -5,7 +5,7 @@ const audio = document.querySelector('#audio');
 
 
 const loadSong = () => {
-    audio.src = `/src/media/music/Small.mp3`
+    audio.src = `https://res.cloudinary.com/dpaxljhpr/video/upload/v1716421794/Portfolio%202.0/Small.mp3`
 }
 
 loadSong();
