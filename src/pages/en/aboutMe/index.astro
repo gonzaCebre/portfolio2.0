@@ -7,7 +7,6 @@ import ovni from "../../../media/img/ovni.png";
 import interiorOvni from "../../../media/img/aboutMe/interior-ovni3.png";
 import Layout from "../../../layouts/Layout.astro";
 import MyStory from "../../../components/aboutMe/MyStory.astro";
-import Small from "../../../media/music/Small.mp3";
 ---
 
 <Layout>
@@ -22,7 +21,9 @@ import Small from "../../../media/music/Small.mp3";
     </div>
 
     <div class="about-me__interior">
-      <audio src={Small} id="audio"></audio>
+      <audio
+        src="https://res.cloudinary.com/dpaxljhpr/video/upload/v1716421794/Portfolio%202.0/Small.mp3"
+        id="audio"></audio>
 
       <div class="about-me__interior__reproductor">
         <i class="fas fa-backward" id="previous"></i>
