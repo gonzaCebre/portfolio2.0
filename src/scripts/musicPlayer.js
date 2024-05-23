@@ -1,6 +1,6 @@
 const daleButton = document.getElementById('daleButton');
-const musicContainer = document.querySelector('.music-container');
 const audio = document.querySelector('#audio');
+const musicButton = document.querySelector('#music');
 
 
 
@@ -11,24 +11,20 @@ const loadSong = () => {
 loadSong();
 
 const playSong = () =>{
-    musicContainer.classList.add('play');
-    playBtn.querySelector('i.fas').classList.remove('fa-play');
-    playBtn.querySelector('i.fas').classList.add('fa-pause');
+    musicButton.classList.add('play');
 
     audio.play()
 }
 
 const pauseSong = () => {
-    musicContainer.classList.remove('play');
-    playBtn.querySelector('i.fas').classList.add('fa-play');
-    playBtn.querySelector('i.fas').classList.remove('fa-pause');
+    musicButton.classList.remove('play');
 
     audio.pause();
 }
 
 
-playBtn.addEventListener('click', ()=>{
-    const isPlaying = musicContainer.classList.contains('play');
+musicButton.addEventListener('click', ()=>{
+    const isPlaying = musicButton.classList.contains('play');
 
     if(isPlaying){
         pauseSong();
