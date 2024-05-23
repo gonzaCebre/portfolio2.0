@@ -45,15 +45,12 @@ const previousStory = () =>{
 
 const audio = document.querySelector('#audio');
 
-const songs = ['Small', 'Heart'];
 
-let songIndex = 0;
-
-const loadSong = (song) => {
-    audio.src = `/src/media/music/${song}.mp3`
+const loadSong = () => {
+    audio.src = `https://res.cloudinary.com/dpaxljhpr/video/upload/v1716421794/Portfolio%202.0/Small.mp3`
 }
 
-loadSong(songs[songIndex]);
+loadSong();
 
 const playSong = () =>{
     audio.play()
@@ -67,19 +64,6 @@ const pauseSong = () => {
 
 
 
-const nextSong = () => {
-    songIndex++;
-
-    if(songIndex > songs.length - 1){
-        songIndex = 0;
-    }
-
-    loadSong(songs[songIndex]);
-
-    playSong()
-
-}
-
 
 music.addEventListener('click', ()=>{
     const isPlaying = music.classList.contains('playing');
@@ -92,4 +76,3 @@ music.addEventListener('click', ()=>{
 })
 
 
-audio.addEventListener('ended', nextSong)
